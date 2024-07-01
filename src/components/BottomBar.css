@@ -1,0 +1,19 @@
+.bottombar-container
+{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+@media (min-width: 750px) {
+    .bottombar-container {
+        display: none;
+    }
+}

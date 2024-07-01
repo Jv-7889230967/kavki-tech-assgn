@@ -1,0 +1,48 @@
+.card-container
+{
+    height: 210px;
+    width: 90%;
+    border-radius: 20px;
+    background: linear-gradient(
+        to bottom right,
+        #6f6d6c 0%,
+        #6f6d6c 30%,
+        #252424 35%,
+        #252424 80%,
+        #6f6d6c 96%,
+        #6f6d6c 94%,
+        #252424 98%,
+        #252424 100%
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.heading-container
+{
+    height: 80px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.heading-container p{
+    color: #EED052;
+    font-weight: 600;
+}
+.heading-container h3{
+    font-size: medium;
+    font-weight: 500;
+    margin: 0;
+}
+.card-details
+{
+    height: 100px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 10px;
+}

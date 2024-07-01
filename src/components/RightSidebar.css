@@ -1,0 +1,73 @@
+.rightsidebar-container
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 400px;
+    right: 10px;
+    margin-top: 27px;
+    border-radius: 20px;
+    background-color: rgb(122, 97, 66);
+}
+h3{
+    font-size: larger;
+    color: aliceblue;
+    margin: 3px;
+}
+p{
+    font-size: small;
+    color: aliceblue;
+    margin: 0;
+}
+.cards-container
+{
+    height: 580px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    gap: 20px;
+}
+.cards-container.expanded
+{
+    overflow: auto; /* Enable scrolling */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  
+}
+.read-more
+{
+    bottom: 10px;
+    position: absolute;
+    z-index: 30;
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(
+        to top,
+        rgba(129, 96, 56, 1),
+        rgba(129, 96, 56, 0.3)
+    );
+    opacity: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.read-more button{
+    display: flex;
+    align-items: center;
+   border: none;
+   background-color: inherit;
+   color: orange;
+   font-size: medium;
+   font-weight: 600;
+   position: relative; /* Ensure button is positioned independently */
+   z-index: 40; /* Make sure the button is above the background */
+   cursor: pointer;
+}
+@media (max-width: 1000px) {
+    .rightsidebar-container {
+        display: none;
+    }
+}
